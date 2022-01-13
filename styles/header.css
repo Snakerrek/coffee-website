@@ -28,6 +28,10 @@
   margin-left: 0.625rem;
 }
 
+.navbar-brand span {
+  margin-left: 10px;
+}
+
 /* Change navbar styling on scroll */
 
 .navigation-wrap.scroll-on {

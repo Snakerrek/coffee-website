@@ -22,8 +22,13 @@ html {
 
 body {
   font-family: var(--primary-font);
+  background: var(--black-color);
   font-size: 100%;
   font-weight: 400;
+}
+
+.hidden {
+  display: none;
 }
 
 a,

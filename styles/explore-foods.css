@@ -1,3 +1,7 @@
+.explore-food {
+  background: var(--white-color);
+}
+
 .explore-food .card {
   border: none;
   background-color: transparent;
