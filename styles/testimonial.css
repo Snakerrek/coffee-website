@@ -1,0 +1,38 @@
+.testimonial-section {
+  background: url("../images/reviews-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.testimonial-section .carousel-item {
+  padding: 150px 50px;
+  background-color: var(--white-color);
+  text-align: center;
+  border-radius: 15px;
+}
+.testimonial-section .carousel-caption img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 5px;
+  object-fit: cover;
+}
+
+.testimonial-section .carousel-item .carousel-caption p {
+  font-size: 1.3125rem;
+  line-height: 30px;
+  padding: 0 10% 10px;
+}
+.testimonial-section .carousel-indicators {
+  bottom: -45px;
+}
+.testimonial-section .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  margin-right: 15px;
+  opacity: 0.2;
+}
+.testimonial-section .carousel-indicators button.active {
+  opacity: 1;
+}

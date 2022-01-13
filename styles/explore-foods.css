@@ -1,10 +1,10 @@
 .explore-food .card {
   border: none;
   background-color: transparent;
-  border-radius: 0.9375rem;
+  border-radius: 15px;
 }
 .explore-food .card img {
-  border-radius: 0.9375rem;
+  border-radius: 15px;
   object-fit: cover;
   height: 200px;
 }
@@ -14,9 +14,9 @@
   font-weight: 700;
   color: var(--primary-color);
   padding-bottom: 1rem;
-  border-bottom: 0.0625rem solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .explore-food .card span del {
   color: var(--text-gray);
-  margin-left: 0.5rem;
+  margin-left: 10px;
 }

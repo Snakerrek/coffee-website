@@ -1,0 +1,5 @@
+.faq h4 span {
+  color: var(--primary-color);
+  font-size: 1.875rem;
+  margin-right: 5px;
+}
