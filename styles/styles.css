@@ -3,6 +3,8 @@
 @import "header.css";
 @import "home.css";
 @import "counter.css";
+@import "about.css";
+@import "explore-foods.css";
 
 * {
   box-sizing: border-box;
