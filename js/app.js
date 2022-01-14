@@ -39,3 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const currYear = new Date().getFullYear();
+$("#date").text(`© ${currYear}. Coffee lovers. All rights reserved.`);

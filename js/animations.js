@@ -6,6 +6,7 @@ window.onload = function () {
     $("#explore-food").fadeIn(5500);
     $("#testimonial").fadeIn(6500);
     $("#faq").fadeIn(7500);
-    $("#footer").fadeIn(8500);
+    $("#coffee-recipes").fadeIn(8500);
+    $("#footer").fadeIn(9500);
   }
 };

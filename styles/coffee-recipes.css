@@ -1,0 +1,16 @@
+#coffee-recipes {
+  background: var(--white-color);
+  /* margin-top: -50px; */
+}
+
+.card-header {
+  background-color: var(--primary-color);
+}
+
+.card-body button {
+  margin-top: 15px;
+}
+
+.card-body li {
+  list-style-type: none;
+}
