@@ -3,7 +3,6 @@ const recipeForm = document.querySelector("#recipe-form");
 const recipeContainer = document.querySelector("#recipe-container");
 let recipes = [];
 
-// FUNCTIONS
 const handleFormSubmit = (e) => {
   e.preventDefault();
   const name = DOMPurify.sanitize(recipeForm.querySelector("#name").value);
@@ -23,7 +22,8 @@ const handleFormSubmit = (e) => {
   };
   recipes.push(newRecipe);
   e.target.reset();
-  recipeContainer.dispatchEvent(new CustomEvent("refreshRecipes"));
+  displayRecipes();
+  mirrorStateToLocalStorage();
 };
 
 const displayRecipes = () => {
@@ -68,18 +68,17 @@ const loadinitialUI = () => {
   if (tempLocalStorage === null || tempLocalStorage === []) return;
   const tempRecipes = JSON.parse(tempLocalStorage);
   recipes.push(...tempRecipes);
-  recipeContainer.dispatchEvent(new CustomEvent("refreshRecipes"));
+  displayRecipes();
 };
 
 const deleteRecipeFromList = (id) => {
   recipes = recipes.filter((item) => item.id !== id);
-  recipeContainer.dispatchEvent(new CustomEvent("refreshRecipes"));
+  displayRecipes();
+  mirrorStateToLocalStorage();
 };
 
 // EVENT LISTENERS
 recipeForm.addEventListener("submit", handleFormSubmit);
-recipeContainer.addEventListener("refreshRecipes", displayRecipes);
-recipeContainer.addEventListener("refreshRecipes", mirrorStateToLocalStorage);
 window.addEventListener("DOMContentLoaded", loadinitialUI);
 recipeContainer.addEventListener("click", (e) => {
   if (e.target.matches(".delete-button")) {
