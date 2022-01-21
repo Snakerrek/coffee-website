@@ -23,7 +23,11 @@ html {
 
 body {
   font-family: var(--primary-font);
-  background: var(--black-color);
+  background: linear-gradient(
+    to bottom,
+    var(--black-color) 30%,
+    var(--white-color)
+  );
   font-size: 100%;
   font-weight: 400;
 }
