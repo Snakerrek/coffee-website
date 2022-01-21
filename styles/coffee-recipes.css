@@ -3,6 +3,10 @@
   /* margin-top: -50px; */
 }
 
+#recipe-container {
+  min-height: 50px;
+}
+
 .card-header {
   background-color: var(--primary-color);
 }
