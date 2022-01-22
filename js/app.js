@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }, step);
   }
   document.addEventListener("scroll", function (e) {
-    if (window.scrollY > 350 && !onceDone) {
+    if (window.scrollY > 0 && !onceDone) {
       counter("count1", 0, 30, 4000);
       counter("count2", 0, 4, 4000);
       counter("count3", 0, 15, 4000);
